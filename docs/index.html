@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio acadêmico e profissional de Bruna Rodrigues Gomes, desenvolvedora de software e profissional de qualidade de software.">
+  <meta name="description"
+    content="Portfólio acadêmico e profissional de Bruna Rodrigues Gomes, desenvolvedora de software e profissional de qualidade de software.">
   <title>Bruna Rodrigues Gomes | Portfólio</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="navbar" data-navbar>
     <a class="navbar__brand" href="#inicio" aria-label="Ir para o início">
       <span class="navbar__star" aria-hidden="true"><img src="img/identidade/estrela-navbar.png" alt=""></span>
-      <span class="navbar__name"><img src="img/identidade/nome-navbar.png" alt=""><span class="sr-only">Bruna Gomes</span></span>
+      <span class="navbar__name"><img src="img/identidade/nome-navbar.png" alt=""><span class="sr-only">Bruna
+          Gomes</span></span>
     </a>
 
     <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
@@ -48,19 +52,20 @@
       </aside>
 
       <div class="hero__copy">
-        <h1 id="titulo-principal"><img src="img/identidade/nome-hero.png" alt=""><span class="sr-only">Bruna Gomes</span></h1>
+        <h1 id="titulo-principal"><img src="img/identidade/nome-hero.png" alt=""><span class="sr-only">Bruna
+            Gomes</span></h1>
         <p class="hero__role">Desenvolvedora de Software e QA</p>
         <p class="hero__subtitle">Tecnologia, qualidade de software e ciência aplicada.</p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#projetos"><span>Explorar projetos</span><b aria-hidden="true">→</b></a>
+          <a class="button button--primary" href="#projetos"><span>Explorar projetos</span><b
+              aria-hidden="true">→</b></a>
         </div>
       </div>
 
       <div class="hero__visual" aria-label="Ilustração de um gato sobre um monitor com elementos orbitais">
-        <img class="hero__orbits" src="img/hero/orbitas.png" alt="" aria-hidden="true">
-        <img class="hero__cat" src="img/hero/gato.png" alt="Ilustração de um gato preto apoiado sobre um monitor">
-        <div class="hero__monitor-wrap">
-          <img class="hero__monitor" src="img/hero/monitor.png" alt="Monitor ilustrado exibindo um código Hello World em Python">
+        <div class="hero__scene">
+          <img class="hero__scene-image" src="img/hero/hero-completa.png"
+            alt="Ilustração de um gato preto apoiado sobre um monitor, cercado por elementos orbitais">
           <div class="hero__terminal" aria-label="Terminal Python digitando print Hello World">
             <div class="hero__terminal-bar"><span></span><span></span><span></span><b>python</b></div>
             <pre><span class="hero__prompt">&gt;&gt;&gt; </span><code data-terminal-code></code><span class="hero__cursor" aria-hidden="true"></span></pre>
@@ -89,19 +94,29 @@
         </div>
         <article class="project-card project-card--featured">
           <div class="project-visual project-visual--sisam">
-            <img class="project-visual__screenshot" src="img/projetos/sisam.png" alt="Mapa do SISAM exibindo a previsão da concentração de material particulado nos municípios brasileiros">
+            <img class="project-visual__screenshot" src="img/projetos/sisam.png"
+              alt="Mapa do SISAM exibindo a previsão da concentração de material particulado nos municípios brasileiros">
           </div>
           <div class="project-card__body">
             <span class="project-card__eyebrow">Em destaque</span>
             <span class="project-card__meta">Projeto profissional · INPE · 2026</span>
             <h4>SISAM — INPE</h4>
-            <p>Sistema do Instituto Nacional de Pesquisas Espaciais que integra qualidade do ar e saúde pública, com previsão e reanálise de poluentes por município e mapas interativos.</p>
+            <p>Sistema do Instituto Nacional de Pesquisas Espaciais que integra qualidade do ar e saúde pública, com
+              previsão e reanálise de poluentes por município e mapas interativos.</p>
             <div class="contribution">
               <strong>Minha contribuição</strong>
-              <p>Atuo em qualidade de software, levantamento de requisitos, validação de interfaces, automação de testes e verificação da consistência entre dados, APIs e visualizações cartográficas.</p>
+              <p>Atuo em qualidade de software, levantamento de requisitos, validação de interfaces, automação de testes
+                e verificação da consistência entre dados, APIs e visualizações cartográficas.</p>
             </div>
-            <ul class="tag-list" aria-label="Tecnologias"><li>Python</li><li>Selenium</li><li>Pytest</li><li>PostgreSQL</li><li>Leaflet</li></ul>
-            <div class="project-card__actions"><a href="https://data.inpe.br/queimadas/sisam/" target="_blank" rel="noopener noreferrer">Acessar sistema <span aria-hidden="true">↗</span></a></div>
+            <ul class="tag-list" aria-label="Tecnologias">
+              <li>Python</li>
+              <li>Selenium</li>
+              <li>Pytest</li>
+              <li>PostgreSQL</li>
+              <li>Leaflet</li>
+            </ul>
+            <div class="project-card__actions"><a href="https://data.inpe.br/queimadas/sisam/" target="_blank"
+                rel="noopener noreferrer">Acessar sistema <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
       </div>
@@ -112,46 +127,222 @@
           <h3>Acadêmicos</h3>
         </div>
         <div class="projects__grid">
+          <article class="project-card project-card--academic-featured">
+            <div class="project-carousel" data-carousel tabindex="0"
+              aria-label="Imagens do projeto Controle de Acesso Conectado">
+              <div class="project-carousel__viewport" aria-live="polite">
+
+                <!-- Capa ilustrada -->
+                <figure class="project-carousel__slide project-carousel__slide--cover is-active">
+                  <img src="img/projetos/controle-acesso/capa-controle-acesso.png"
+                    alt="Ilustração do sistema de controle de acesso conectado, integrando terminal físico, RFID, ESP32 e aplicação web">
+                </figure>
+
+                <!-- Fotografias da maquete -->
+                <figure class="project-carousel__slide project-carousel__slide--photo" hidden>
+                  <img src="img/projetos/controle-acesso/maquete-geral.jpeg"
+                    alt="Maquete do terminal de controle de acesso inspirada em um laboratório Pokémon">
+                </figure>
+
+                <figure class="project-carousel__slide project-carousel__slide--photo" hidden>
+                  <img src="img/projetos/controle-acesso/maquete-hardware.jpeg"
+                    alt="Parte frontal da maquete com leitor RFID, sensor e LEDs do terminal">
+                </figure>
+
+                <figure class="project-carousel__slide project-carousel__slide--photo" hidden>
+                  <img src="img/projetos/controle-acesso/maquete-interior.jpeg"
+                    alt="Ambiente interno da maquete do laboratório">
+                </figure>
+
+                <!-- Telas do sistema -->
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-01-terminal.png"
+                    alt="Tela de autenticação do sistema de controle de acesso">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-02-terminal.png"
+                    alt="Painel administrativo com indicadores de acessos">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-03-terminal.png"
+                    alt="Tela de acompanhamento de acessos por usuário e horário">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-04-terminal.png" alt="Formulário de cadastro de local">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-05-terminal.png"
+                    alt="Formulário de cadastro de terminal físico">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-06-terminal.png"
+                    alt="Janela de edição de terminal cadastrado">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-07-terminal.png"
+                    alt="Formulário de cadastro de novo usuário">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-08-terminal.png"
+                    alt="Tela de gerenciamento de autorizações de acesso">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-09-terminal.png"
+                    alt="Painel com métricas e gráficos de acessos">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-10-terminal.png"
+                    alt="Detalhes de um terminal e histórico de acessos recentes">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-11-terminal.png"
+                    alt="Tela de registros de entrada e saída">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-12-terminal.png"
+                    alt="Modal de sorteio exibido pelo sistema">
+                </figure>
+
+                <figure class="project-carousel__slide" hidden>
+                  <img src="img/projetos/controle-acesso/abp-13-terminal.png"
+                    alt="Resultado de sorteio exibido pelo sistema">
+                </figure>
+
+              </div>
+
+              <div class="project-carousel__controls">
+                <button type="button" data-carousel-prev aria-label="Imagem anterior">
+                  ←
+                </button>
+
+                <span data-carousel-status aria-label="Imagem 1 de 17">
+                  01 / 17
+                </span>
+
+                <button type="button" data-carousel-next aria-label="Próxima imagem">
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__eyebrow">ABP atual</span>
+              <span class="project-card__meta">4DSM — 2º sem. 2026</span>
+              <h4>Controle de Acesso Conectado</h4>
+              <p>Sistema de controle de acesso com reconhecimento facial, QR Code e RFID, integrando aplicativos,
+                painel web, backend e terminal físico com ESP32.</p>
+              <div class="contribution"><strong>Minha contribuição</strong>
+                <p>Fui responsável pela montagem e pelos testes do terminal físico, com leitor RFID, display OLED,
+                  LEDs, buzzer e motor de passo 28BYJ-48 com driver ULN2003 para acionamento da porta.</p>
+              </div>
+              <ul class="tag-list" aria-label="Tecnologias utilizadas">
+                <li>ESP32</li>
+                <li>C/C++</li>
+                <li>RFID RC522</li>
+                <li>OLED</li>
+                <li>28BYJ-48</li>
+                <li>ULN2003</li>
+                <li>IoT</li>
+                <li>Reconhecimento facial</li>
+                <li>QR Code</li>
+              </ul>
+              <div class="project-card__actions"><a href="https://github.com/Helloworld-fatec/access-control"
+                  target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+
           <article class="project-card">
-            <div class="project-visual"><img class="project-visual__art" src="img/projetos/valle-leads.png" alt="Ilustração editorial de um dashboard de gestão de leads para uma revendedora de veículos"></div>
+            <div class="project-visual"><img class="project-visual__art" src="img/projetos/valle-leads.png"
+                alt="Ilustração editorial de um dashboard de gestão de leads para uma revendedora de veículos"></div>
             <div class="project-card__body">
               <span class="project-card__meta">3DSM — 1º sem. 2026</span>
               <h4>Valle Leads System</h4>
               <p>Sistema de gestão de leads, negociações e indicadores desenvolvido para a 1000 Valle Multimarcas.</p>
-              <div class="contribution"><strong>Minha contribuição</strong><p>Participação no desenvolvimento do projeto integrador, colaborando com a construção da interface e as entregas do sistema.</p></div>
-              <ul class="tag-list"><li>React</li><li>TypeScript</li><li>Node.js</li><li>PostgreSQL</li></ul>
-              <div class="project-card__actions"><a href="https://github.com/Helloworld-fatec/valle-leads-system" target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
+              <div class="contribution"><strong>Minha contribuição</strong>
+                <p>Participação no desenvolvimento do projeto integrador, colaborando com a construção da interface e as
+                  entregas do sistema.</p>
+              </div>
+              <ul class="tag-list">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <div class="project-card__actions"><a href="https://github.com/Helloworld-fatec/valle-leads-system"
+                  target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-visual"><img class="project-visual__art" src="img/projetos/dados-limnologicos.png" alt="Ilustração editorial de um reservatório com pontos de coleta e gráficos ambientais"></div>
+            <div class="project-visual">
+              <img class="project-visual__art" src="img/projetos/dados-limnologicos.png"
+                alt="Ilustração editorial de dados limnológicos, gráficos e mapa de reservatório">
+            </div>
             <div class="project-card__body">
               <span class="project-card__meta">2DSM — 2º sem. 2025</span>
               <h4>Dados Limnológicos</h4>
-              <p>Aplicação para consulta e disseminação de dados limnológicos e meteorológicos de reservatórios.</p>
-              <div class="contribution"><strong>Minha contribuição</strong><p>Atuei como Scrum Master, contribuí com o design visual e desenvolvi páginas informativas sobre a aplicação.</p></div>
-              <ul class="tag-list"><li>React</li><li>TypeScript</li><li>Chart.js</li><li>Docker</li><li>Mapbox</li></ul>
-              <div class="project-card__actions"><a href="https://github.com/Helloworld-fatec/abp-dados-limnologicos" target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
+              <p>Aplicação web para visualização, consulta e disseminação de dados limnológicos e meteorológicos de reservatórios, com filtros, tabelas, gráficos e mapas interativos.</p>
+              <div class="contribution">
+                <strong>Minha contribuição</strong>
+                <p>Atuei como Scrum Master na organização, no acompanhamento e na facilitação do time. Também contribuí com o design visual e com o desenvolvimento de páginas informativas.</p>
+              </div>
+              <ul class="tag-list" aria-label="Tecnologias utilizadas">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>Chart.js</li>
+                <li>Leaflet</li>
+                <li>Mapbox</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/Helloworld-fatec/abp-dados-limnologicos" target="_blank"
+                  rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-visual"><img class="project-visual__art" src="img/projetos/horarios-fatec.png" alt="Ilustração editorial de uma grade de horários acadêmicos com relógio"></div>
+            <div class="project-visual"><img class="project-visual__art" src="img/projetos/horarios-fatec.png"
+                alt="Ilustração editorial de uma grade de horários acadêmicos com relógio"></div>
             <div class="project-card__body">
               <span class="project-card__meta">1DSM — 1º sem. 2025</span>
               <h4>Sistema de Horários da FATEC</h4>
               <p>Aplicação web para visualização e organização do quadro de aulas da FATEC Jacareí.</p>
-              <div class="contribution"><strong>Minha contribuição</strong><p>Realizei o design e o desenvolvimento do front-end, além da integração da interface com o banco de dados.</p></div>
-              <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>PostgreSQL</li></ul>
-              <div class="project-card__actions"><a href="https://github.com/techcastlefatec/horarios-fatec" target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
+              <div class="contribution"><strong>Minha contribuição</strong>
+                <p>Realizei o design e o desenvolvimento do front-end, além da integração da interface com o banco de
+                  dados.</p>
+              </div>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <div class="project-card__actions"><a href="https://github.com/techcastlefatec/horarios-fatec"
+                  target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
         </div>
       </div>
 
       <div class="project-group">
-        <div class="project-group__heading"><p class="eyebrow">Autoria e experimentação</p><h3>Pessoais</h3></div>
+        <div class="project-group__heading">
+          <p class="eyebrow">Autoria e experimentação</p>
+          <h3>Pessoais</h3>
+        </div>
         <article class="project-card project-card--personal">
           <div class="project-visual project-visual--portfolio" aria-hidden="true">
             <img class="project-visual__portfolio-screenshot" src="img/projetos/portfolio-home.png" alt="">
@@ -160,83 +351,247 @@
             <span class="project-card__meta">Projeto pessoal · 2026</span>
             <h4>Portfólio Pessoal</h4>
             <p>Site desenvolvido para apresentar minha trajetória acadêmica, projetos e experiências profissionais.</p>
-            <div class="contribution"><strong>Minha contribuição</strong><p>Realizei a direção visual, a organização do conteúdo, o desenvolvimento completo e a adaptação responsiva.</p></div>
-            <ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Git</li><li>GitHub</li></ul>
-            <div class="project-card__actions"><a href="https://github.com/brunagomess26/Portfolio" target="_blank" rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
+            <div class="contribution"><strong>Minha contribuição</strong>
+              <p>Realizei a direção visual, a organização do conteúdo, o desenvolvimento completo e a adaptação
+                responsiva.</p>
+            </div>
+            <ul class="tag-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+            <div class="project-card__actions"><a href="https://github.com/brunagomess26/Portfolio" target="_blank"
+                rel="noopener noreferrer">Repositório <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section publications" id="publicacoes" aria-labelledby="titulo-publicacoes">
-      <div class="section-heading"><span class="section-heading__bar"></span><h2 id="titulo-publicacoes">Publicações e pesquisa</h2><span class="section-heading__line"></span><span class="section-heading__index">02</span></div>
+      <div class="section-heading"><span class="section-heading__bar"></span>
+        <h2 id="titulo-publicacoes">Publicações e pesquisa</h2><span class="section-heading__line"></span><span
+          class="section-heading__index">02</span>
+      </div>
       <div class="publications__band">
-        <img class="publications__geo" src="img/publicacoes/geoespacial.png" alt="Composição gráfica inspirada em dados geoespaciais e ciência ambiental">
-        <div class="publications__copy"><span class="eyebrow">Produção científica</span><h3>Em breve</h3><p>Novas publicações e resultados de pesquisa serão disponibilizados aqui. Acompanhe trabalhos em ciência aplicada, qualidade de dados e meio ambiente.</p></div>
-        <div class="publications__research"><img src="img/publicacoes/pesquisa.png" alt="Composição editorial com artigo científico e elementos de dados ambientais"><span>Em preparação</span></div>
+        <img class="publications__geo" src="img/publicacoes/geoespacial.png"
+          alt="Composição gráfica inspirada em dados geoespaciais e ciência ambiental">
+        <article class="publications__copy">
+          <span class="eyebrow">Artigo científico · WorCAP 2026</span>
+          <h3>Artigo publicado</h3>
+          <p class="publications__title">Uma abordagem incremental e iterativa para verificação automatizada de
+            interfaces web geoespaciais: um estudo de caso para o SISAM</p>
+          <p class="publications__authors">Bruna R. Gomes, Fabrício G. M. de Carvalho e Ryan Alves</p>
+          <a class="publications__doi" href="https://doi.org/10.5281/zenodo.22982254" target="_blank"
+            rel="noopener noreferrer">Acessar publicação <span aria-hidden="true">↗</span></a>
+        </article>
+        <div class="publications__research"><img src="img/publicacoes/pesquisa.png"
+            alt="Composição editorial com artigo científico e elementos de dados ambientais"><span>Publicado</span>
+        </div>
       </div>
     </section>
 
     <section class="section about" id="sobre" aria-labelledby="titulo-sobre">
-      <div class="section-heading"><span class="section-heading__bar"></span><h2 id="titulo-sobre">Sobre e formação</h2><span class="section-heading__line"></span><span class="section-heading__index">03</span></div>
+      <div class="section-heading">
+        <span class="section-heading__bar"></span>
+
+        <h2 id="titulo-sobre">Sobre e formação</h2>
+
+        <span class="section-heading__line"></span>
+        <span class="section-heading__index">03</span>
+      </div>
+
       <div class="about__layout">
         <div class="about__copy">
+
           <figure class="profile-photo">
             <img src="img/perfil/bruna-gomes.jpeg" alt="Retrato de Bruna Rodrigues Gomes">
             <figcaption>Bruna Rodrigues Gomes</figcaption>
           </figure>
-          <div><span class="label">Sobre mim</span><p>Sou desenvolvedora de software com atuação em QA e uma trajetória que conecta tecnologia e ciência. Minha formação em Biomedicina e Química contribuiu para um olhar investigativo e criterioso, que hoje aplico no desenvolvimento de interfaces, na validação de sistemas e na construção de soluções digitais confiáveis.</p></div>
-          <div class="about__objective"><span class="label">Objetivo profissional</span><p>Busco desenvolver minha carreira integrando desenvolvimento de software e QA, participando de projetos que valorizem qualidade, organização e responsabilidade técnica.</p><p>Tenho interesse especial por soluções aplicadas à ciência, ao meio ambiente e ao impacto social, nas quais possa contribuir com desenvolvimento, testes e evolução contínua do produto.</p></div>
+
+          <div class="about__bio">
+            <span class="label">Sobre mim</span>
+
+            <p>
+              Sou desenvolvedora de software com atuação em QA e uma trajetória que
+              conecta tecnologia e ciência. Minha formação em Biomedicina e Química
+              contribuiu para um olhar investigativo e criterioso, que hoje aplico no
+              desenvolvimento de interfaces, na validação de sistemas e na construção
+              de soluções digitais confiáveis.
+            </p>
+          </div>
+
+          <div class="about__objective">
+            <span class="label">Objetivo profissional</span>
+
+            <p>
+              Busco desenvolver minha carreira integrando desenvolvimento de software
+              e QA, participando de projetos que valorizem qualidade, organização e
+              responsabilidade técnica.
+            </p>
+
+            <p>
+              Tenho interesse especial por soluções aplicadas à ciência, ao meio
+              ambiente e ao impacto social, nas quais possa contribuir com
+              desenvolvimento, testes e evolução contínua do produto.
+            </p>
+          </div>
+
         </div>
 
         <div class="education" aria-labelledby="titulo-formacao">
-          <h3 id="titulo-formacao">Formação acadêmica</h3>
-          <div class="education__timeline" aria-hidden="true"></div>
-          <div class="education__cards">
-            <article class="education-card">
-              <span class="education-card__year">Atual</span>
-              <img class="education-card__icon" src="img/formacao/desenvolvimento-software.png" alt="" aria-hidden="true">
-              <h4>Desenvolvimento de Software Multiplataforma</h4>
-              <p>FATEC Jacareí</p>
-              <small>Cursando</small>
-            </article>
-            <article class="education-card">
-              <span class="education-card__year">2024</span>
-              <img class="education-card__icon" src="img/formacao/tecnico-quimica.png" alt="" aria-hidden="true">
-              <h4>Técnico em Química</h4>
-              <p>SENAI</p>
-              <small>Concluído</small>
-            </article>
-            <article class="education-card">
-              <span class="education-card__year">2022</span>
-              <img class="education-card__icon" src="img/formacao/biomedicina.png" alt="" aria-hidden="true">
-              <h4>Bacharelado em Biomedicina</h4>
-              <p>Universidade Paulista — UNIP</p>
-              <small>Concluído</small>
-            </article>
-          </div>
-        </div>
+      <h3 id="titulo-formacao">Formação acadêmica</h3>
+      <div class="education__timeline" aria-hidden="true"></div>
+      <div class="education__cards">
+        <article class="education-card">
+          <span class="education-card__year">Atual</span>
+          <img class="education-card__icon" src="img/formacao/desenvolvimento-software.png" alt="" aria-hidden="true">
+          <h4>Desenvolvimento de Software Multiplataforma</h4>
+          <p>FATEC Jacareí</p>
+          <small>Cursando</small>
+        </article>
+        <article class="education-card">
+          <span class="education-card__year">2024</span>
+          <img class="education-card__icon" src="img/formacao/tecnico-quimica.png" alt="" aria-hidden="true">
+          <h4>Técnico em Química</h4>
+          <p>SENAI</p>
+          <small>Concluído</small>
+        </article>
+        <article class="education-card">
+          <span class="education-card__year">2022</span>
+          <img class="education-card__icon" src="img/formacao/biomedicina.png" alt="" aria-hidden="true">
+          <h4>Bacharelado em Biomedicina</h4>
+          <p>Universidade Paulista — UNIP</p>
+          <small>Concluído</small>
+        </article>
       </div>
+    </div>
+    </div>
     </section>
 
     <section class="section skills" id="habilidades" aria-labelledby="titulo-habilidades">
-      <div class="section-heading"><span class="section-heading__bar"></span><h2 id="titulo-habilidades">Habilidades e tecnologias</h2><span class="section-heading__line"></span><span class="section-heading__index">04</span></div>
+      <div class="section-heading"><span class="section-heading__bar"></span>
+        <h2 id="titulo-habilidades">Habilidades e tecnologias</h2><span class="section-heading__line"></span><span
+          class="section-heading__index">04</span>
+      </div>
       <div class="skills__grid">
-        <article class="skill-card"><header><h3>Qualidade de Software</h3></header><div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M18 12h44v56H18zM28 28l7 7 15-16M28 49l7 7 15-16M56 28h2M56 49h2"/></svg></div><ul><li>Python</li><li>Selenium</li><li>Pytest</li><li>Testes de interface</li><li>Testes de API</li><li>Rastreabilidade</li></ul></article>
-        <article class="skill-card"><header><h3>Desenvolvimento Front-end</h3></header><div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><rect x="10" y="14" width="60" height="48" rx="3"/><path d="M10 25h60M21 19h2M28 19h2M35 19h2M30 38l-8 7 8 7M50 38l8 7-8 7M45 33 35 57"/></svg></div><ul><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Responsividade</li></ul></article>
-        <article class="skill-card"><header><h3>Back-end e Bancos de Dados</h3></header><div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><ellipse cx="52" cy="20" rx="17" ry="8"/><path d="M35 20v38c0 5 8 8 17 8s17-3 17-8V20M35 33c0 5 8 8 17 8s17-3 17-8M35 46c0 5 8 8 17 8s17-3 17-8M11 17h17v13H11zM11 40h17v13H11zM19 30v10"/></svg></div><ul><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>SQL</li><li>APIs REST</li><li>CSV</li></ul></article>
-        <article class="skill-card"><header><h3>Visualização de Dados</h3></header><div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M12 66h56M17 60V39h10v21M35 60V25h10v35M53 60V14h10v46M16 30l16-10 12 7 19-17"/></svg></div><ul><li>Chart.js</li><li>Recharts</li><li>Tabelas e filtros</li><li>Gráficos temporais</li><li>Dados científicos</li></ul></article>
-        <article class="skill-card"><header><h3>Mapas e Geotecnologias</h3></header><div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="m9 19 20-8 22 8 20-8v50l-20 8-22-8-20 8zM29 11v50M51 19v50M40 24c-8 0-13 6-13 13 0 10 13 22 13 22s13-12 13-22c0-7-5-13-13-13z"/><circle cx="40" cy="37" r="4"/></svg></div><ul><li>Leaflet</li><li>Mapbox</li><li>Mapas interativos</li><li>Dados geográficos</li><li>Ciência ambiental</li></ul></article>
-        <article class="skill-card"><header><h3>Ferramentas e Infraestrutura</h3></header><div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M33 12h14l3 9 9 4 9-4 7 12-7 7 1 10 6 8-7 12-9-4-9 4-3 9H33l-3-9-9-4-9 4-7-12 7-8-1-10-6-7 7-12 9 4 9-4z"/><circle cx="40" cy="45" r="12"/></svg></div><ul><li>Git</li><li>GitHub</li><li>Docker</li><li>Docker Compose</li><li>Linux</li><li>VS Code</li></ul></article>
+        <article class="skill-card">
+          <header>
+            <h3>Qualidade de Software</h3>
+          </header>
+          <div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80">
+              <path d="M18 12h44v56H18zM28 28l7 7 15-16M28 49l7 7 15-16M56 28h2M56 49h2" />
+            </svg></div>
+          <ul>
+            <li>Python</li>
+            <li>Selenium</li>
+            <li>Pytest</li>
+            <li>Testes de interface</li>
+            <li>Testes de API</li>
+            <li>Rastreabilidade</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <header>
+            <h3>Desenvolvimento Front-end</h3>
+          </header>
+          <div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80">
+              <rect x="10" y="14" width="60" height="48" rx="3" />
+              <path d="M10 25h60M21 19h2M28 19h2M35 19h2M30 38l-8 7 8 7M50 38l8 7-8 7M45 33 35 57" />
+            </svg></div>
+          <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsividade</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <header>
+            <h3>Back-end e Bancos de Dados</h3>
+          </header>
+          <div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80">
+              <ellipse cx="52" cy="20" rx="17" ry="8" />
+              <path
+                d="M35 20v38c0 5 8 8 17 8s17-3 17-8V20M35 33c0 5 8 8 17 8s17-3 17-8M35 46c0 5 8 8 17 8s17-3 17-8M11 17h17v13H11zM11 40h17v13H11zM19 30v10" />
+            </svg></div>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>SQL</li>
+            <li>APIs REST</li>
+            <li>CSV</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <header>
+            <h3>Visualização de Dados</h3>
+          </header>
+          <div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80">
+              <path d="M12 66h56M17 60V39h10v21M35 60V25h10v35M53 60V14h10v46M16 30l16-10 12 7 19-17" />
+            </svg></div>
+          <ul>
+            <li>Chart.js</li>
+            <li>Recharts</li>
+            <li>Tabelas e filtros</li>
+            <li>Gráficos temporais</li>
+            <li>Dados científicos</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <header>
+            <h3>Mapas e Geotecnologias</h3>
+          </header>
+          <div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80">
+              <path
+                d="m9 19 20-8 22 8 20-8v50l-20 8-22-8-20 8zM29 11v50M51 19v50M40 24c-8 0-13 6-13 13 0 10 13 22 13 22s13-12 13-22c0-7-5-13-13-13z" />
+              <circle cx="40" cy="37" r="4" />
+            </svg></div>
+          <ul>
+            <li>Leaflet</li>
+            <li>Mapbox</li>
+            <li>Mapas interativos</li>
+            <li>Dados geográficos</li>
+            <li>Ciência ambiental</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <header>
+            <h3>Ferramentas e Infraestrutura</h3>
+          </header>
+          <div class="skill-card__icon" aria-hidden="true"><svg viewBox="0 0 80 80">
+              <path
+                d="M33 12h14l3 9 9 4 9-4 7 12-7 7 1 10 6 8-7 12-9-4-9 4-3 9H33l-3-9-9-4-9 4-7-12 7-8-1-10-6-7 7-12 9 4 9-4z" />
+              <circle cx="40" cy="45" r="12" />
+            </svg></div>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>Docker Compose</li>
+            <li>Linux</li>
+            <li>VS Code</li>
+          </ul>
+        </article>
       </div>
     </section>
 
     <section class="section contact" id="contato" aria-labelledby="titulo-contato">
-      <div class="section-heading"><span class="section-heading__bar"></span><h2 id="titulo-contato">Contato profissional</h2><span class="section-heading__line"></span><span class="section-heading__index">05</span></div>
+      <div class="section-heading"><span class="section-heading__bar"></span>
+        <h2 id="titulo-contato">Contato profissional</h2><span class="section-heading__line"></span><span
+          class="section-heading__index">05</span>
+      </div>
       <p class="contact__intro">Encontre meus projetos e acompanhe minha trajetória profissional.</p>
       <div class="contact__links">
-        <a class="contact-link contact-link--linkedin" href="https://www.linkedin.com/in/bruna-gomes-540778190" target="_blank" rel="noopener noreferrer"><img src="img/contato/linkedin.png" alt="" aria-hidden="true"><span>LinkedIn</span></a>
-        <a class="contact-link contact-link--github" href="https://github.com/brunagomess26" target="_blank" rel="noopener noreferrer"><img src="img/contato/github.png" alt="" aria-hidden="true"><span>GitHub</span></a>
+        <a class="contact-link contact-link--linkedin" href="https://www.linkedin.com/in/bruna-gomes-540778190"
+          target="_blank" rel="noopener noreferrer"><img src="img/contato/linkedin.png" alt=""
+            aria-hidden="true"><span>LinkedIn</span></a>
+        <a class="contact-link contact-link--github" href="https://github.com/brunagomess26" target="_blank"
+          rel="noopener noreferrer"><img src="img/contato/github.png" alt="" aria-hidden="true"><span>GitHub</span></a>
       </div>
     </section>
   </main>
@@ -247,4 +602,5 @@
     <p>© <span data-current-year>2026</span> Bruna Gomes. Todos os direitos reservados.</p>
   </footer>
 </body>
+
 </html>
