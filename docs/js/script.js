@@ -83,3 +83,53 @@ if (terminalCode && terminalOutput) {
     typeTerminalCode();
   }
 }
+
+document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+  const slides = [...carousel.querySelectorAll('.project-carousel__slide')];
+  const previousButton = carousel.querySelector('[data-carousel-prev]');
+  const nextButton = carousel.querySelector('[data-carousel-next]');
+  const status = carousel.querySelector('[data-carousel-status]');
+  let currentIndex = 0;
+  let pointerStartX = null;
+
+  const showSlide = (requestedIndex) => {
+    currentIndex = (requestedIndex + slides.length) % slides.length;
+    slides.forEach((slide, index) => {
+      const active = index === currentIndex;
+      slide.hidden = !active;
+      slide.classList.toggle('is-active', active);
+    });
+    const current = String(currentIndex + 1).padStart(2, '0');
+    const total = String(slides.length).padStart(2, '0');
+    status.textContent = `${current} / ${total}`;
+    status.setAttribute('aria-label', `Imagem ${currentIndex + 1} de ${slides.length}`);
+  };
+
+  previousButton.addEventListener('click', () => showSlide(currentIndex - 1));
+  nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+
+  carousel.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      showSlide(currentIndex - 1);
+    }
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      showSlide(currentIndex + 1);
+    }
+  });
+
+  carousel.addEventListener('pointerdown', (event) => {
+    pointerStartX = event.clientX;
+  });
+
+  carousel.addEventListener('pointerup', (event) => {
+    if (pointerStartX === null) return;
+    const distance = event.clientX - pointerStartX;
+    pointerStartX = null;
+    if (Math.abs(distance) < 45) return;
+    showSlide(currentIndex + (distance < 0 ? 1 : -1));
+  });
+
+  showSlide(0);
+});
